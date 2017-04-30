@@ -1,0 +1,4 @@
+Language:
+  <% available_translations.each do |language, label| %>
+    <%= link_to label, "?locale=#{language}", class: 'dropdown-item', role: 'menuitem', tabindex: '-1' %> |
+  <% end %>

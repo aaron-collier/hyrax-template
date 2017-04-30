@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require_self
+ */
+
+ body {
+   font-family: "Source Sans Pro",Helvetica,​Arial,​sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+ font-style: normal;
+ line-height: 1.5;
+ }
+
+ #masthead {
+   border-top: 3px solid #35B7E9;
+   height: 105px;
+   background-color: #000;
+ }
+
+ #masthead-dash {
+   border-top: 3px solid #35B7E9;
+   height: 35px;
+   background-color: #000;
+ }
+
+ body.dashboard {
+     background-color: #f0f0f0;
+     padding-top: 0px;
+ }
+
+ .image-masthead {
+    height: 450px;
+  }
+
+  .image-masthead .background-container {
+       -webkit-filter: none;
+       filter: none;
+       background-position: 0px -80px;
+   }
+
+  .navbar-nav {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 1.05rem;
+  }
+
+ .container-fluid {
+   /* background-color: #2F3F86 !important; */
+ }
+
+ .search-hover {
+   border-color: orange;
+ height: 200px;
+ /* border: 1px solid; */
+ margin-top: 20px;
+ margin-left: 10px;
+ padding: 15px;
+ /* background: rgb(255,255,255,0.5); */
+ /* opacity: .30; */
+ font-family: "PT Sans Narrow",Helvetica,​Arial,​sans-serif;
+ font-size: 2.25rem;
+ color: #fff;
+ }
+
+ .bmlogo {
+     position: absolute;
+     margin-left: 5%;
+     background-color: transparent;
+     z-index: 100;
+ }
+
+ .utilbar {
+     height: 35px;
+     text-align: right;
+     padding-right: 1rem;
+     padding-top: .15rem;
+ }
+
+ .utilbar a {
+ color: #ffffff !important;
+ padding: 0 .45rem .3rem;
+ font-size: 80%;
+ }
+
+ .bg-med0 {
+     background-color: #2F3F86;
+     color: #CFDBE9;
+ }
+
+ .topnav {
+   height: 100%;
+   margin-left: 17em;
+   margin-top: 10px;
+   font-size: 1.25em;
+ }
+
+ #content-wrapper {
+   margin-top: 120px;
+ }
+
+ header h1, #search-results h2 {
+   font-family: 'Lato', Verdana, Arail, Helvetica, sans-serif;
+   font-weight: 300;
+   font-size: 36px;
+   font-style: normal;
+ }
+
+ #search-results h2 {
+   font-size: 30px;
+ }
+
+ .metadata {
+   font-family: 'Lato', Verdana, Arail, Helvetica, sans-serif;
+   font-weight: 300;
+   border-bottom: 1px solid black;
+ }
+
+ .metadata td {
+   font-size: 14px;
+ }
+ .work_description, .attributes {
+   font-size: 14px;
+ }
+
+ .borderless tbody>tr>td {
+     border: none;
+ }
+
+ .borderless tbody>tr>th {
+   border: none;
+   text-align: right;
+ }
+
+ .representative-media {
+   max-width: 90%;
+ }
+
+ .attribute {
+   text-align: left;
+ }
+
+ .nav-search {
+   padding: auto;
+   margin-top: 15px;
+   margin-right: 20px;
+ }
+
+ #facets h3 {
+   font-family: 'Lato', Verdana, Arail, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+ }
