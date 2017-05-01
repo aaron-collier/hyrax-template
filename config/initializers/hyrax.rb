@@ -1,6 +1,8 @@
 Hyrax.config do |config|
   # Injected via `rails g hyrax:work Thesis`
   config.register_curation_concern :thesis
+  # Injected via `rails g hyrax:work FacultyWork`
+  config.register_curation_concern :faculty_work
   # Register roles that are expected by your implementation.
   # @see Hyrax::RoleRegistry for additional details.
   # @note there are magical roles as defined in Hyrax::RoleRegistry::MAGIC_ROLES
