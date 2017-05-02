@@ -33,8 +33,6 @@ require 'zip'
 }
 
 @singulars = {
-  "dc.date.submitted" => "date_uploaded",
-  "dc.date.updated" => "date_modified",
   "dc.date.accessioned" => "date_accessioned",
   "dc.date.embargountil" => "embargo_release_date"
 }
@@ -143,7 +141,7 @@ def process_mets (mets_file,parentColl = nil)
        end
      else
        params[@attributes[field]] << element.inner_html if @attributes.has_key? field
-       # params[@singulars[field]] = element.inner_html if @singulars.has_key? field
+       params[@singulars[field]] = element.inner_html if @singulars.has_key? field
      end
      # @uncapturedFields[field] += 1 unless (@attributes.has_key? field || @singulars.has_key? field)
      @unmappedFields.write(field) unless @attributes.has_key? field
