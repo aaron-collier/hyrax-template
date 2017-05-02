@@ -3,38 +3,42 @@ require 'zip'
 
 @attributes = {
   "dc.title" => "title",
-  "dc.date" => "date_submitted",
-  "dc.identifier.uri" => "handle",
-  "dc.description.abstract" => "abstract",
+  "dc.date" => "date_submitted", # Thesis
+  "dc.identifier.uri" => "handle", # Thesis
+  "dc.description.abstract" => "abstract", # Thesis
   "dc.contributor.author" => "creator",
+  "dc.creator" => "creator",
   "dc.date.issued" => "date_created",
+  "dc.date.created" => "date_created",
   "dc.publisher" => "publisher",
   "dc.language" => "language",
   "dc.language.iso" => "language",
   "dc.subject" => "subject",
+  "dc.subject.lcsh" => "keyword",
   "dc.description" => "description",
-  "dc.description.sponsorship" => "sponsor",
-  "dc.title.alternative" => "alternative_title",
-  "dc.type" => "resource_type",
-  "dc.contributor.advisor" => "advisor",
-  "dc.creator" => "creator",
-  "dc.advisor" => "contributor",
-  "dc.date.created" => "date_created",
+  "dc.description.sponsorship" => "sponsor", # Thesis
   "dc.contributor.sponsor" => "sponsor",
+  "dc.sponsor", # Newspaper
+  "dc.title.alternative" => "alternative_title", # Thesis
+  "dc.type" => "resource_type",
+  "dc.contributor.advisor" => "advisor", # Thesis
+  "dc.advisor" => "advisor",
   "dc.contributor" => "contributor",
-  "dc.description.provenance" => "provenance",
+  "dc.description.provenance" => "provenance", # Thesis
   "dc.provenance" => "provenance",
-  "dc.contributor.committeemember" => "committee_member",
-  "dc.coverage.spatial" => "geographical_area",
-  "dc.coverage.temporal" => "time_period",
-  "dc.date.available" => "date_available",
+  "dc.contributor.committeemember" => "committee_member", # Thesis
+  "dc.coverage.spatial" => "geographical_area", # Thesis
+  "dc.coverage.temporal" => "time_period", # Thesis
+  "dc.date.available" => "date_available", # Thesis
   "dc.rights" => "license",
-  "dc.date.submitted" => "date_submitted"
+  "dc.date.submitted" => "date_submitted",
+  "dc.identifier.citation" => "bibligraphic_citation",
+  "dc.rights.usage" => "rights_statement" # Newspaper
 }
 
 @singulars = {
-  "dc.date.accessioned" => "date_accessioned",
-  "dc.date.embargountil" => "embargo_release_date"
+  "dc.date.accessioned" => "date_accessioned", # Thesis
+  "dc.date.embargountil" => "embargo_release_date", # Thesis
 }
 
 # embargo fields
@@ -271,7 +275,8 @@ def createItem (params, depositor, parent = nil)
     depositor = @defaultDepositor
   end
 
-  item = Thesis.new(id: ActiveFedora::Noid::Service.new.mint)
+  # item = Thesis.new(id: ActiveFedora::Noid::Service.new.mint)
+  item = Newspaper.new(id: ActiveFedora::Noid::Service.new.mint)
   if params.key?("embargo_release_date")
     # params["visibility"] = "embargo"
     params["visibility_after_embargo"] = "open"
