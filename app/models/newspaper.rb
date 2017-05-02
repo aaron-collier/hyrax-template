@@ -10,4 +10,7 @@ class Newspaper < ActiveFedora::Base
   validates :title, presence: { message: 'Your work must have a title.' }
 
   self.human_readable_type = 'Newspaper'
+
+  property :date_accessioned, predicate: ::RDF::Vocab::DC.date, multiple: false
+
 end
