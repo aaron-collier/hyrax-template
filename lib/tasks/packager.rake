@@ -18,7 +18,7 @@ require 'zip'
   "dc.description" => "description",
   "dc.description.sponsorship" => "sponsor", # Thesis
   "dc.contributor.sponsor" => "sponsor",
-  "dc.sponsor", # Newspaper
+  "dc.sponsor" => "sponsor", # Newspaper
   "dc.title.alternative" => "alternative_title", # Thesis
   "dc.type" => "resource_type",
   "dc.contributor.advisor" => "advisor", # Thesis
