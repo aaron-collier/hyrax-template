@@ -33,6 +33,5 @@ class FacultyWork < ActiveFedora::Base
 
   property :provenance, predicate: ::RDF::Vocab::DC.provenance
   property :date_accessioned, predicate: ::RDF::Vocab::DC.date, multiple: false
-  property :embargo_release_date, predicate: ::RDF::Vocab::DC.date, multiple: false
 
 end
