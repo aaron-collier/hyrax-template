@@ -29,7 +29,7 @@ require 'zip'
   "dc.contributor.committeemember" => "committee_member", # Thesis
   "dc.coverage.spatial" => "geographical_area", # Thesis
   "dc.coverage.temporal" => "time_period", # Thesis
-  "dc.date.available" => "date_available", # Thesis
+  "dc.date.available" => "date_uploaded", # "date_available", # Thesis
   "dc.rights" => "license",
   "dc.date.submitted" => "date_submitted",
   "dc.identifier.citation" => "bibligraphic_citation",
