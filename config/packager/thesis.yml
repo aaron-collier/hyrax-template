@@ -1,0 +1,100 @@
+# Dublin Core Field Mapping
+dc.title:
+  property: title
+  multiple: true
+dc.date:
+  property: date_submitted # Thesis
+  multiple: true
+dc.identifier.uri:
+  property: handle # Thesis
+  multiple: true
+dc.description.abstract:
+  property: abstract # Thesis
+  multiple: true
+dc.contributor.author:
+  property: creator
+  multiple: true
+dc.creator:
+  property: creator
+  multiple: true
+dc.date.issued:
+  property: date_created
+  multiple: true
+dc.date.created:
+  property: date_created
+  multiple: true
+dc.publisher:
+  property: publisher
+  multiple: true
+dc.language:
+  property: language
+  multiple: true
+dc.language.iso:
+  property: language
+  multiple: true
+dc.subject:
+  property: subject
+  multiple: true
+dc.subject.lcsh:
+  property: keyword
+  multiple: true
+dc.description:
+  property: description
+  multiple: true
+dc.description.sponsorship:
+  property: sponsor # Thesis
+  multiple: true
+dc.contributor.sponsor:
+  property: sponsor
+  multiple: true
+dc.sponsor:
+  property: sponsor # Newspaper
+  multiple: true
+dc.title.alternative:
+  property: alternative_title # Thesis
+  multiple: true
+dc.type:
+  property: resource_type
+  multiple: true
+dc.contributor.advisor:
+  property: advisor # Thesis
+  multiple: true
+dc.advisor:
+  property: advisor
+  multiple: true
+dc.contributor:
+  property: contributor
+  multiple: true
+dc.description.provenance:
+  property: provenance # Thesis
+  multiple: true
+dc.provenance:
+  property: provenance
+  multiple: true
+dc.contributor.committeemember:
+  property: committee_member # Thesis
+  multiple: true
+dc.coverage.spatial:
+  property: geographical_area # Thesis
+  multiple: true
+dc.coverage.temporal:
+  property: time_period # Thesis
+  multiple: true
+dc.rights:
+  property: license
+  multiple: true
+dc.date.submitted:
+  property: date_submitted
+  multiple: true
+dc.identifier.citation:
+  property: bibligraphic_citation
+  multiple: true
+dc.rights.usage:
+  property: rights_statement # (Default) Newspaper
+  multiple: true
+
+#@singulars = {
+  # "dc.date.available: date_available # # Thesis
+#  "dc.date.available: date_uploaded # Newspaper
+#  "dc.date.accessioned: date_accessioned # Thesis
+#  "dc.date.embargountil: embargo_release_date # Thesis

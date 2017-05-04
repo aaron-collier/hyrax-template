@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'zip'
+require 'yaml'
 
 @attributes = {
   "dc.title" => "title",
@@ -51,6 +52,11 @@ require 'zip'
 @debugging = FALSE
 
 namespace :packager do
+
+  task :test do
+    config = OpenStruct.new(YAML.load_file("config/packager.yml"))   # [MY_ENV])
+    puts config['work_type']
+  end
 
   task :aip, [:file, :user_id] =>  [:environment] do |t, args|
     puts "loading task import"
